@@ -1,0 +1,8 @@
+{
+  "name": "Guatá Labs",
+  "description": "Laboratório de tecnologia e impacto criado por estudantes para transformar conhecimento em soluções reais.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
