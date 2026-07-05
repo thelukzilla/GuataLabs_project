@@ -14,11 +14,11 @@ export const siteContent = {
   },
   whatIsGuata: {
     title: "Um laboratório de tecnologia, impacto e coragem.",
-    text: "A Guatá Labs é um espaço onde estudantes criam sistemas, validam ideias e desenvolvem produtos digitais com propósito. Não somos apenas uma equipe de tecnologia. Somos um grupo de pessoas tentando provar que bons projetos podem nascer de lugares simples, com poucos recursos, muita vontade e execução consistente.",
+    text: "A Guatá Labs é um espaço onde estudantes criam sistemas, validam ideias e desenvolvem produtos digitais com propósito. Mais do que uma equipe de tecnologia, oferecemos suporte integral a projetos, unindo desenvolvimento de software a estratégias de marketing digital, gestão de redes sociais, produção de conteúdo e tráfego (orgânico e pago) de forma profissional. Somos um grupo de pessoas provando que bons projetos nascem da união entre visão estratégica e execução consistente.",
     cards: [
       "Criamos produtos digitais",
       "Desenvolvemos projetos sociais",
-      "Apoiamos e aceleramos projetos",
+      "Apoiamos projetos com tech, marketing e tráfego",
       "Conectamos estudantes a desafios reais",
       "Transformamos aprendizado em prática",
       "Construímos com propósito e responsabilidade"
@@ -32,20 +32,23 @@ export const siteContent = {
         name: "Código com Propósito",
         description: "Um projeto social para ensinar tecnologia a estudantes e iniciantes, conectando aprendizado com demandas reais de empresas, instituições e empreendedores. A ideia é simples: aprender criando algo que importa.",
         impactText: "Menos curso perdido. Mais projeto real. Mais gente começando.",
-        tags: ["Educação", "Tecnologia", "Impacto social", "Projetos reais"]
+        tags: ["Educação", "Tecnologia", "Impacto social", "Projetos reais"],
+        link: "https://teste6-eight.vercel.app/"
       },
       {
         name: "Lorac",
         description: "Uma plataforma educacional inteligente criada para organizar a rotina de estudos, produtividade, colaboração e evolução dos estudantes em um único ecossistema digital. A Guatá Labs atua como apoio estratégico e técnico na construção deste ecossistema, que nasce para reduzir a fragmentação dos estudos e ajudar alunos a aprenderem com mais clareza, constância e direção.",
         impactText: "Estudar melhor não deveria depender de usar dez ferramentas ao mesmo tempo.",
-        tags: ["Educação", "Produtividade", "IA", "Apoio a Projeto", "Organização"]
+        tags: ["Educação", "Produtividade", "IA", "Apoio a Projeto", "Organização"],
+        link: "https://lorac2-4.onrender.com/static/html/signup-screen.html"
       },
       {
         name: "Projeto Saúde Mental Masculina",
         description: "Um projeto em estágio inicial inspirado na ideia de um “Duolingo da saúde mental masculina”: uma jornada gamificada para ajudar homens jovens a desenvolverem disciplina, autoestima, rotina, repertório emocional e direção de vida.",
         ethicsNote: "O projeto não substitui terapia ou acompanhamento profissional. A proposta é criar uma ferramenta de apoio, educação e autocuidado.",
         impactText: "Homens também precisam de linguagem, rotina e espaço seguro para evoluir.",
-        tags: ["Saúde mental", "Gamificação", "Autocuidado", "Jovens", "Rotina"]
+        tags: ["Saúde mental", "Gamificação", "Autocuidado", "Jovens", "Rotina"],
+        badge: "Pré-Alfa"
       }
     ]
   },
@@ -99,12 +102,12 @@ export const siteContent = {
   },
   founders: {
     title: "Quem está caminhando com a Guatá",
-    intro: "A Guatá Labs é formada por uma base forte de desenvolvedores com perfis complementares. Todos nós escrevemos código, mas com a mesma inquietação: transformar estudo em prática, prática em projeto e projeto em oportunidade.",
+    intro: "A Guatá Labs é formada por uma base forte de desenvolvedores com perfis complementares. Vindos de faculdades diferentes (PUC Minas, Newton Paiva e Anhanguera) e unidos pelo amor à tecnologia e pelo desejo de ajudar, todos nós escrevemos código com a mesma inquietação: transformar estudo em prática, prática em projeto e projeto em oportunidade.",
     items: [
       {
         name: "Willian Douglas",
         role: "Desenvolvedor, Estratégia & Produto",
-        description: "Willian atua no desenvolvimento unindo código, comunicação e visão de negócio. Estudante da área de tecnologia, tem experiência com desenvolvimento web, dados, automação, social media, design, tráfego, edição de vídeo e projetos digitais. Já teve loja virtual, participa da sociedade de um pequeno CT de boxe e Muay Thai e sempre esteve próximo de empreendedores, ajudando amigos a tirarem ideias do papel.",
+        description: "Willian atua no desenvolvimento unindo código, comunicação e visão de negócio. Estudante de tecnologia na Newton Paiva, tem experiência com desenvolvimento web, dados, automação, social media, design, tráfego, edição de vídeo e projetos digitais. Já teve loja virtual, participa da sociedade de um pequeno CT de boxe e Muay Thai e sempre esteve próximo de empreendedores, ajudando amigos a tirarem ideias do papel.",
         humanText: "Como desenvolvedor, é o tipo de pessoa que enxerga oportunidade onde muita gente só vê improviso. Sua força está em conectar tecnologia a pessoas, entender dores reais e transformar ideias em código e caminhos possíveis.",
         highlights: [
           "Desenvolvimento e dados",
@@ -119,7 +122,7 @@ export const siteContent = {
       {
         name: "Breno Souza",
         role: "Desenvolvedor Back-end, Engenharia & Arquitetura",
-        description: "Breno é a base técnica mais profunda e especializada da equipe. Estudante de Ciência da Computação, com formação prévia em Redes de Computadores, atua como desenvolvedor de software com foco intenso em back-end, Java, Spring Boot, AWS, DevOps, bancos de dados e boas práticas de engenharia.",
+        description: "Breno é a base técnica mais profunda e especializada da equipe. Estudante de Ciência da Computação na Anhanguera, com formação prévia em Redes de Computadores, atua como desenvolvedor de software com foco intenso em back-end, Java, Spring Boot, AWS, DevOps, bancos de dados e boas práticas de engenharia.",
         humanText: "Resiliente, disciplinado e extremamente eficiente no código, Breno é aquele perfil que sabe se virar, aprender ferramentas novas e resolver problemas complexos com profundidade. Gosta da base da tecnologia: algoritmos, arquitetura, segurança, redes e estrutura.",
         highlights: [
           "Desenvolvimento Back-end",

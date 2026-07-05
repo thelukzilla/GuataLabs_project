@@ -38,36 +38,51 @@ export default function Projects() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1, duration: 0.5 }}
-              className="bg-white p-6 rounded-2xl shadow-sm border border-guata-black/5 hover:border-guata-light transition-colors flex flex-col h-full group"
+              className="relative bg-white p-6 rounded-2xl shadow-sm border border-guata-black/5 hover:border-guata-light transition-colors flex flex-col h-full group"
             >
               <div className="flex-grow">
                 <div className="flex justify-between items-start mb-6">
-                  <h3 className="font-display text-2xl font-bold text-guata-dark">
-                    {project.name}
-                  </h3>
-                  <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity text-guata-olive">
-                    <ArrowUpRight size={20} />
+                  <div>
+                    {(project as any).badge && (
+                      <span className="text-[10px] bg-guata-olive/10 px-2 py-1 rounded text-guata-olive font-bold uppercase tracking-wider mb-3 inline-block">
+                        {(project as any).badge}
+                      </span>
+                    )}
+                    <h3 className="font-display text-2xl font-bold text-guata-dark">
+                      {(project as any).link ? (
+                        <a href={(project as any).link} target="_blank" rel="noopener noreferrer" className="hover:text-guata-olive transition-colors before:absolute before:inset-0">
+                          {project.name}
+                        </a>
+                      ) : (
+                        project.name
+                      )}
+                    </h3>
                   </div>
+                  {(project as any).link && (
+                    <div className="w-10 h-10 rounded-full bg-guata-offwhite flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity text-guata-olive">
+                      <ArrowUpRight size={20} />
+                    </div>
+                  )}
                 </div>
                 
-                <p className="text-guata-black/80 mb-6 leading-relaxed">
+                <p className="text-guata-black/80 mb-6 leading-relaxed relative z-10 pointer-events-none">
                   {project.description}
                 </p>
                 
-                {project.ethicsNote && (
-                  <div className="mb-6 p-4 bg-guata-olive/10 rounded-xl text-sm text-guata-dark font-medium border border-guata-olive/20">
-                    {project.ethicsNote}
+                {(project as any).ethicsNote && (
+                  <div className="mb-6 p-4 bg-guata-olive/10 rounded-xl text-sm text-guata-dark font-medium border border-guata-olive/20 relative z-10 pointer-events-none">
+                    {(project as any).ethicsNote}
                   </div>
                 )}
                 
-                <div className="mb-8 border-l-2 border-guata-olive pl-4 py-1">
+                <div className="mb-8 border-l-2 border-guata-olive pl-4 py-1 relative z-10 pointer-events-none">
                   <p className="text-guata-darker font-semibold">
                     {project.impactText}
                   </p>
                 </div>
               </div>
 
-              <div className="flex flex-wrap gap-2 mt-auto pt-6">
+              <div className="flex flex-wrap gap-2 mt-auto pt-6 relative z-10 pointer-events-none">
                 {project.tags.map((tag, tagIndex) => (
                   <span 
                     key={tagIndex}
